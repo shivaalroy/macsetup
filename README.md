@@ -19,6 +19,7 @@ defaults write bluetoothaudiod "AAC Bitrate" 320
 sudo defaults write bluetoothaudiod "Enable AAC codec" -bool true
 sudo defaults write bluetoothaudiod "AAC Bitrate" 320
 ```
-
-### Equalizer
-Download from https://bitgapp.com/eqmac/
+## More powerful Quicklook
+```sh
+brew cask install qlstephen
+```
