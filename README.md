@@ -1,7 +1,38 @@
 # macsetup
 
+## List of things to do in settings
+- [ ] Install chrome
+- [ ] set display size
+- [ ] set touch bar settings (see below)
+- [ ] set mouse settings (tracking speed, scroll direction, etc.)
+- [ ] set keyboard settings (key repeat speed, key repeat delay, etc.)
+- [ ] set dock preferences
+- [ ] set hot corners / mission control
+- [ ] set computer name
+- [ ] set up BetterSnapTool
+- [ ] set up slack
+- [ ] set up airtable
+- [ ] set up KeepingYouAwake
+- [ ] set up imessage
+- [ ] set up contacts
+- [ ] set up caprine
+- [ ] configure notifications
+- [ ] show battery percentage
+
+
+## Touch Bar
+- [ ] set keyboard touch bar to always be on
+- [ ] remove Ask Siri
+
+
+## Turn Off Typing Autocorrect Suggestions
+```sh
+TODO
+```
+
+
 ## Overwrite UI Defaults
-Following http://osxdaily.com/2012/10/09/best-defaults-write-commands-mac-os-x/
+Remove delay for showing dock. Following http://osxdaily.com/2012/10/09/best-defaults-write-commands-mac-os-x/
 ```sh
 defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 ```
