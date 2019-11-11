@@ -16,6 +16,7 @@
 - [ ] set up imessage
 - [ ] set up contacts
 - [ ] set up caprine
+- [ ] set up iterm
 - [ ] configure notifications
 - [ ] show battery percentage
 
