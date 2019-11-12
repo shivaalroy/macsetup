@@ -18,7 +18,16 @@
 - [ ] set up caprine
 - [ ] set up iterm
 - [ ] configure notifications
+- [ ] set up flux
+- [ ] set up screen saver
 - [ ] show battery percentage
+- [ ] set up sublime
+
+
+## Set up zsh and oh-my-zsh
+Google how to do this. But it should look roughly like this:
+- (brew) install zsh and zsh-completions
+- curl the oh-my-zsh repo
 
 
 ## Touch Bar
