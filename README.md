@@ -29,6 +29,10 @@ Google how to do this. But it should look roughly like this:
 - (brew) install zsh and zsh-completions
 - curl the oh-my-zsh repo
 
+- [ ] Set up bash aliases and custom theme
+- [ ] Set up git checkout to only show local branches https://gist.github.com/mmrko/b3ec6da9bea172cdb6bd83bdf95ee817
+
+
 
 ## Touch Bar
 - [ ] set keyboard touch bar to always be on
