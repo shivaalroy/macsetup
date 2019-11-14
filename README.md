@@ -24,8 +24,9 @@
 - [ ] set up sublime
 
 
-## Set up zsh and oh-my-zsh
-Google how to do this. But it should look roughly like this:
+## Terminal Setup
+### Set up zsh and oh-my-zsh
+Google how to do this. But it should look roughly like:
 - [ ] brew install zsh 
 - [ ] brew install zsh-completions
 - [ ] curl the oh-my-zsh repo:
@@ -33,10 +34,10 @@ Google how to do this. But it should look roughly like this:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-###
+### Additional Stuff
 - [ ] Set up bash aliases and custom theme
+- [ ] Make sure to `brew install git` before doing the next step
 - [ ] Set up git checkout to only show local branches https://gist.github.com/mmrko/b3ec6da9bea172cdb6bd83bdf95ee817
-
 
 
 ## Touch Bar
