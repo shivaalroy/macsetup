@@ -1,27 +1,40 @@
 # macsetup
 
-## List of things to do in settings
-- [ ] Install chrome
+## List of things to do in Settings
+- [ ] install chrome
 - [ ] set display size
 - [ ] set touch bar settings (see below)
 - [ ] set mouse settings (tracking speed, scroll direction, etc.)
-- [ ] set keyboard settings (key repeat speed, key repeat delay, etc.)
 - [ ] set dock preferences
 - [ ] set hot corners / mission control
 - [ ] set computer name
-- [ ] set up BetterSnapTool
-- [ ] set up slack
-- [ ] set up airtable
-- [ ] set up KeepingYouAwake
 - [ ] set up imessage
 - [ ] set up contacts
-- [ ] set up caprine
-- [ ] set up iterm
 - [ ] configure notifications
-- [ ] set up flux
 - [ ] set up screen saver
 - [ ] show battery percentage
+
+## App Set Up
+- [ ] set up Chrome
+- [ ] set up iterm
+- [ ] set up airtable
+- [ ] set up BetterSnapTool
+- [ ] set up slack
+- [ ] set up KeepingYouAwake
+- [ ] set up caprine
+- [ ] set up flux
 - [ ] set up sublime
+- [ ] set up atom
+
+
+## Keyboard Settings
+- [ ] set key repeat speed
+- [ ] set key repeat delay, etc.
+- [ ] following the last comment in [this](https://github.com/atom/atom/issues/1669), run 
+```sh
+mkdir -p ~/Library/KeyBindings
+echo '{\n  "^@\\UF701" = "noop:";\n  "^@\\UF702" = "noop:";\n  "^@\\UF703" = "noop:";\n}' > ~/Library/KeyBindings/DefaultKeyBinding.dict
+```
 
 
 ## Terminal Setup
