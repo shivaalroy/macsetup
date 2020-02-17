@@ -16,15 +16,16 @@
 
 ## App Set Up
 - [ ] set up Chrome
-- [ ] set up iterm
-- [ ] set up airtable
+- [ ] set up iTerm
+- [ ] set up Airtable
 - [ ] set up BetterSnapTool
-- [ ] set up slack
+- [ ] set up Slack
 - [ ] set up KeepingYouAwake
-- [ ] set up caprine
-- [ ] set up flux
-- [ ] set up sublime
-- [ ] set up atom
+- [ ] set up Caprine
+- [ ] set up Flux
+- [ ] set up Sublime, with registration code [here](https://mail.google.com/mail/u/0?ik=f340c96e8a&view=om&permmsgid=msg-f%3A1657311888944350919)
+- [ ] set up Atom
+- [ ] set up RescueTime
 
 
 ## Keyboard Settings
