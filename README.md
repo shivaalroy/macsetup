@@ -31,7 +31,7 @@
 ## Keyboard Settings
 - [ ] set key repeat speed
 - [ ] set key repeat delay, etc.
-- [ ] following the last comment in [this](https://github.com/atom/atom/issues/1669), run 
+- [ ] following the last comment in [this](https://github.com/atom/atom/issues/1669) for disabling Atom bell. Run:
 ```sh
 mkdir -p ~/Library/KeyBindings
 echo '{\n  "^@\\UF701" = "noop:";\n  "^@\\UF702" = "noop:";\n  "^@\\UF703" = "noop:";\n}' > ~/Library/KeyBindings/DefaultKeyBinding.dict
@@ -55,6 +55,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 - [ ] turn off paging for git branch:
 ```sh
 git config --global pager.branch false
+git config --global pull.rebase true
+git config --global url."git@github.com:".insteadOf "https://github.com/"
 ```
 
 ### Additional Stuff
