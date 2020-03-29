@@ -48,10 +48,17 @@ Google how to do this. But it should look roughly like:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+### Set up git
+- [ ] brew install git
+- [ ] Set up git checkout to only show local branches https://gist.github.com/mmrko/b3ec6da9bea172cdb6bd83bdf95ee817
+- [ ] add git to the list of zsh plugins
+- [ ] turn off paging for git branch:
+```sh
+git config --global pager.branch false
+```
+
 ### Additional Stuff
 - [ ] Set up bash aliases and custom theme
-- [ ] Make sure to `brew install git` before doing the next step
-- [ ] Set up git checkout to only show local branches https://gist.github.com/mmrko/b3ec6da9bea172cdb6bd83bdf95ee817
 
 
 ## Touch Bar
