@@ -1,0 +1,9 @@
+set visualbell
+set noerrorbells
+
+nnoremap K i<CR><Esc>
+nnoremap Y y$
+
+inoremap jk <Esc>
+
+set ideajoin
