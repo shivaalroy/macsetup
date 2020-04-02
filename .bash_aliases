@@ -13,5 +13,12 @@ if [ $(whoami) == "Shivaal" ]; then
     alias simpleserver='python -m SimpleHTTPServer 8000'
 elif [ $(whoami) == "shivaal" ]; then
     # Work computer
-    echo "work computer"
+    alias bb='bazel build'
+    alias bba='bazel build //...'
+    alias bt='bazel test'
+    alias bta='bazel test --test_output=summary //...'
+    alias bte='bt --test_output=errors'
+    alias btta='bt --test_output=all'
+    alias br='bazel run'
+    alias deploy='bba && bta && .bazel/bin/python_scio/deployment/deploy --skip_test'
 fi
