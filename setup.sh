@@ -1,6 +1,13 @@
 #!/bin/bash
-ln -s macsetup/.ideavimrc ~/
-ln -s macsetup/.bash_aliases ~/
-ln -s macsetup/.vimrc ~/
-mkdir -p ~/.vim/colors
-cp molokai.vim ~/.vim/colors/
+ln -sf macsetup/.bash_aliases ~/
+
+ln -sf macsetup/.ideavimrc ~/
+
+# TODO: Make sure vim is brew-installed first
+# Make sure to enable iTerm2 > Preferences > Profiles > Window > Keep background colors opaque
+mkdir -p ~/.vim/bundle
+if [[ ! -d "$HOME/.vim/bundle/Vundle.vim" ]]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+ln -sf macsetup/.vimrc ~/
+vim +PluginInstall +qall
