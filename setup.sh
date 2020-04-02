@@ -1,4 +1,4 @@
 #!/bin/bash
-ln -s $(pwd)/.ideavimrc ~/
-ln -s $(pwd)/.bash_aliases ~/
-ln -s $(pwd)/.vimrc ~/
+ln -s macsetup/.ideavimrc ~/
+ln -s macsetup/.bash_aliases ~/
+ln -s macsetup/.vimrc ~/
