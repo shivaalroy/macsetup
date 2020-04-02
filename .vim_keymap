@@ -1,0 +1,13 @@
+nnoremap <S-Up> v<Up>
+inoremap <S-Up> <Esc>v<Up>
+vnoremap <S-Up> <Up>
+
+nnoremap <S-Down> v<Down>
+inoremap <S-Down> <Esc><Right>v<Down>
+vnoremap <S-Down> <Down>
+
+nnoremap K i<CR><Esc>
+nnoremap Y y$
+
+inoremap jk <Esc>
+

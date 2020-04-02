@@ -44,7 +44,8 @@ set incsearch
 set hlsearch
 set smartindent
 
-nnoremap K i<CR><Esc>
-nnoremap Y y$
+" Treat any files that begin with '.' and contain 'vim' as type vim
+au BufRead,BufNewFile .*vim* set filetype=vim
 
-inoremap jk <Esc>
+source ~/.vim_keymap
+

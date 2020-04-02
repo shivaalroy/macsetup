@@ -9,5 +9,6 @@ mkdir -p ~/.vim/bundle
 if [[ ! -d "$HOME/.vim/bundle/Vundle.vim" ]]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
+ln -sf macsetup/.vim_keymap ~/
 ln -sf macsetup/.vimrc ~/
 vim +PluginInstall +qall
