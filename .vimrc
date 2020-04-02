@@ -40,7 +40,6 @@ set cursorline
 set backspace=indent,eol,start
 set ruler
 set showmatch
-set incsearch
 set hlsearch
 set smartindent
 

@@ -1,3 +1,5 @@
+set incsearch
+
 nnoremap <S-Up> v<Up>
 inoremap <S-Up> <Esc>v<Up>
 vnoremap <S-Up> <Up>
