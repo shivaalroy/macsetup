@@ -61,6 +61,7 @@ git config --global url."git@github.com:".insteadOf "https://github.com/"
 
 ### Additional Stuff
 - [ ] Set up bash aliases and custom theme
+- [ ] brew install vim and then setup vim
 
 
 ## Touch Bar
