@@ -20,5 +20,5 @@ elif [ $USER = "shivaal" ]; then
     alias bte='bt --test_output=errors'
     alias btta='bt --test_output=all'
     alias br='bazel run'
-    alias deploy='bba && bta && br //python_scio/deployment:deploy --skip_test'
+    alias deploy='br //python_scio/deployment:deploy --'
 fi
