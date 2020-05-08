@@ -22,5 +22,5 @@ vnoremap <Backspace> x
 nnoremap K i<CR><Esc>
 nnoremap Y y$
 
-inoremap jk <Esc>
+"inoremap jk <Esc>
 
