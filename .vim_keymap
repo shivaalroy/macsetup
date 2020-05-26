@@ -20,7 +20,8 @@ nnoremap <Backspace> <Left>x
 vnoremap <Backspace> x
 
 nnoremap K i<CR><Esc>
-nnoremap Y y$
+nnoremap y "*y
+nnoremap Y "*y$
 
 "inoremap jk <Esc>
 
