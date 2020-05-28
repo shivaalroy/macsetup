@@ -22,6 +22,8 @@ vnoremap <Backspace> x
 nnoremap K i<CR><Esc>
 nnoremap y "*y
 nnoremap Y "*y$
+nnoremap p "*p
+nnoremap P "*P
 
 "inoremap jk <Esc>
 
