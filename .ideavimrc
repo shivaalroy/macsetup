@@ -1,6 +1,6 @@
+source ~/.vim_keymap
 set visualbell
 set noerrorbells
 
 set ideajoin
-
-source ~/.vim_keymap
+clipboard+=ideaput
