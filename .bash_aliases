@@ -6,6 +6,7 @@ alias gco='git checkout'
 alias gcor='git checkoutr'
 alias gpu='git push --set-upstream origin $(git_current_branch)'
 alias gs='git status'
+alias gst='git stash'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 if [ $USER = "Shivaal" ]; then
