@@ -20,7 +20,7 @@
 - [ ] set up Airtable
 - [ ] set up BetterSnapTool
 - [ ] set up Slack
-- [ ] set up KeepingYouAwake
+- [ ] set up [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704)
 - [ ] set up Caprine
 - [ ] set up Flux
 - [ ] set up Sublime, with registration code [here](https://mail.google.com/mail/u/0?ik=f340c96e8a&view=om&permmsgid=msg-f%3A1657311888944350919)
