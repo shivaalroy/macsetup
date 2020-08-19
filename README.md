@@ -26,6 +26,7 @@
 - [ ] set up Sublime, with registration code [here](https://mail.google.com/mail/u/0?ik=f340c96e8a&view=om&permmsgid=msg-f%3A1657311888944350919)
 - [ ] set up Atom
 - [ ] set up RescueTime
+- [ ] set up Pastebot via [website download](https://tapbots.com/pastebot/)
 
 
 ## Keyboard Settings
