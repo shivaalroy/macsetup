@@ -21,5 +21,17 @@ elif [ $USER = "shivaal" ]; then
     alias bte='bt --test_output=errors'
     alias btta='bt --test_output=all'
     alias br='bazel run'
+    alias config='br //python_scio/deployment:config_util --'
     alias deploy='br //python_scio/deployment:deploy --'
+    alias docs='bazel run //python_scio/scripts:run_docstore_reader -- --table_name=Documents --project=\$(gcloud config get-value project)'
+    alias sp='cloud_sql_proxy -dir=/tmp/cloudsql'
+    alias sw_shivaal='gcloud config set account shivaal@askscio.com; gcloud config set project scio-deployment;'
+    alias swag='./tools/generate-swagger-bindings.sh query_endpoint'
+
+    sw_customer () {
+        gcloud auth activate-service-account --key-file="$1"
+        PROJECT_ID=`cat "$1" | jq -j .project_id`
+        echo "Set project to: [$PROJECT_ID]"
+        gcloud config set project -q `cat "$1" | jq -j .project_id`
+    }
 fi
