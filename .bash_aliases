@@ -26,7 +26,7 @@ elif [ $USER = "shivaal" ]; then
     alias docs='br //python_scio/scripts:run_docstore_reader -- --table_name=Documents --project=$(gcloud config get-value project)'
     alias escrud='br //python_scio/scripts/tools/escrud:escrud -- -P $(gcloud config get-value project)'
     alias kil='killall cloud_sql_proxy query_endpoint_binary'
-    alias sp='cloud_sql_proxy -dir=/tmp/cloudsql'
+    alias sp='mkdir -p /tmp/cloudsql && cloud_sql_proxy -dir=/tmp/cloudsql'
     alias sw_shivaal='gcloud config set account shivaal@askscio.com; gcloud config set project scio-deployment;'
     alias swag='./tools/generate-swagger-bindings.sh query_endpoint'
 
