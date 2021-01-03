@@ -1,7 +1,7 @@
 #!/bin/bash
-ln -sf macsetup/.bash_aliases ~/
-
-ln -sf macsetup/.ideavimrc ~/
+ln -sf ~/macsetup/shivaal-custom.zsh-theme ~/.oh-my-zsh/themes/
+ln -sf ~/macsetup/.bash_aliases ~/
+ln -sf ~/macsetup/.ideavimrc ~/
 
 # TODO: Make sure vim is brew-installed first
 # Make sure to enable iTerm2 > Preferences > Profiles > Window > Keep background colors opaque
