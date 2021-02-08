@@ -34,10 +34,23 @@ elif [ $USER = "shivaal" ]; then
     alias sw_shivaal='gcloud config set account shivaal@askscio.com; gcloud config set project scio-deployment;'
     alias openapi='./tools/generate-openapi-bindings.sh query_endpoint'
 
-    sw_customer () {
-        gcloud auth activate-service-account --key-file="$1"
-        PROJECT_ID=`cat "$1" | jq -j .project_id`
-        echo "Set project to: [$PROJECT_ID]"
-        gcloud config set project -q `cat "$1" | jq -j .project_id`
+    activate_shivaal () {
+        gcloud config set account shivaal@askscio.com
+        if [ -z "$1" ]
+        then
+            PROJECT_ID=scio-deployment
+        else
+            PROJECT_ID=$1
+        fi
+        gcloud config set project $PROJECT_ID
     }
+
+    activate_customer () {
+        pbpaste > /tmp/key
+        $HOME/workspace/scio/deploy/gcp/get_admin_key.sh /tmp/key /tmp/json
+        PROJECT_ID=$(cat /tmp/json | jq -r .project_id)
+        gcloud auth activate-service-account --key-file /tmp/json
+        gcloud config set project $PROJECT_ID
+    }
+
 fi
