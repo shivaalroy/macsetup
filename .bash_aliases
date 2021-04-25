@@ -32,7 +32,7 @@ elif [ $USER = "shivaal" ]; then
     alias kil="killall cloud_sql_proxy query_endpoint_binary; ps o pid,command | grep -e pubsub -e elast | cut -d\" \" -f1 | xargs -I% kill %"
     alias sp='mkdir -p /tmp/cloudsql && cloud_sql_proxy -dir=/tmp/cloudsql'
     alias sw_shivaal='gcloud config set account shivaal@askscio.com; gcloud config set project scio-deployment;'
-    alias openapi='./tools/generate-openapi-bindings.sh query_endpoint'
+    alias openapi='./tools/generate-openapi-bindings.sh'
 
     activate_shivaal () {
         gcloud config set account shivaal@askscio.com
