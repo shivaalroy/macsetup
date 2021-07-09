@@ -4,6 +4,7 @@ alias gb='git branch'
 alias gc='git commit'
 alias gco='git checkout'
 alias gcor='git checkoutr'
+alias gdc='git diff --cached'
 alias gpu='git push --set-upstream origin $(git_current_branch)'
 alias grev='git revert'
 alias grh='git reset'
@@ -29,15 +30,28 @@ elif [ $USER = "shivaal" ]; then
     alias deploy='br //python_scio/deployment:deploy --'
     alias docs='br //python_scio/scripts:run_docstore_reader -- --table_name=Documents --project=$(gcloud config get-value project)'
     alias escrud='br //python_scio/scripts/tools/escrud:escrud -- -P $(gcloud config get-value project)'
-    alias kil='killall cloud_sql_proxy query_endpoint_binary'
+    alias kil="killall cloud_sql_proxy query_endpoint_binary ssh; ps -ax -o pid,command | grep -e pubsub -e elast | awk '{print \$1}' | xargs -I% kill -9 %"
     alias sp='mkdir -p /tmp/cloudsql && cloud_sql_proxy -dir=/tmp/cloudsql'
     alias sw_shivaal='gcloud config set account shivaal@askscio.com; gcloud config set project scio-deployment;'
-    alias swag='./tools/generate-swagger-bindings.sh query_endpoint'
+    alias openapi='./tools/generate-openapi-bindings.sh'
 
-    sw_customer () {
-        gcloud auth activate-service-account --key-file="$1"
-        PROJECT_ID=`cat "$1" | jq -j .project_id`
-        echo "Set project to: [$PROJECT_ID]"
-        gcloud config set project -q `cat "$1" | jq -j .project_id`
+    activate_shivaal () {
+        gcloud config set account shivaal@askscio.com
+        if [ -z "$1" ]
+        then
+            PROJECT_ID=scio-deployment
+        else
+            PROJECT_ID=$1
+        fi
+        gcloud config set project $PROJECT_ID
     }
+
+    activate_customer () {
+        pbpaste > /tmp/key
+        $HOME/workspace/scio/deploy/gcp/get_admin_key.sh /tmp/key /tmp/json
+        PROJECT_ID=$(cat /tmp/json | jq -r .project_id)
+        gcloud auth activate-service-account --key-file /tmp/json
+        gcloud config set project $PROJECT_ID
+    }
+
 fi

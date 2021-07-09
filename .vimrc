@@ -42,6 +42,12 @@ set ruler
 set showmatch
 set hlsearch
 set smartindent
+" Set tab size to 4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+" Convert <Tab> presses to 4 spaces
+set expandtab
 
 " Treat any files that begin with '.' and contain 'vim' as type vim
 au BufRead,BufNewFile .*vim* set filetype=vim
