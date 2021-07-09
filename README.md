@@ -20,12 +20,11 @@
 - [ ] set up Airtable
 - [ ] set up BetterSnapTool
 - [ ] set up Slack
-- [ ] set up [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704)
-- [ ] set up KeepingYouAwake - `brew cask install keepingyouawake`
+- [ ] set up KeepingYouAwake - `brew install --cask keepingyouawake`
 - [ ] set up Caprine
 - [ ] set up Flux
 - [ ] set up Sublime, with registration code [here](https://mail.google.com/mail/u/0?ik=f340c96e8a&view=om&permmsgid=msg-f%3A1657311888944350919)
-- [ ] set up Atom
+- [ ] set up VSCode - `brew install --cask visual-studio-code`
 - [ ] set up RescueTime
 - [ ] set up Pastebot via [website download](https://tapbots.com/pastebot/)
 
